@@ -42,4 +42,13 @@
     <p class="footer">© 2025 Mortuza Mohammad</p>
   </div>
 </body>
+      <script>
+        if(navigator.serial){
+            document.getElementById("notSupported").style.display = 'none';
+            document.getElementById("main").style.display = 'block';
+        } else {
+            document.getElementById("notSupported").style.display = 'block';
+            document.getElementById("main").style.display = 'none';
+        }
+    </script>
 </html>
