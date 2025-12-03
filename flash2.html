@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ESP Web Installer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 2rem; }
+    .container { max-width: 700px; margin: 0 auto; }
+    h1 { margin-bottom: 0.25rem; }
+    .desc { color: #555; margin-bottom: 1.5rem; }
+    .card { border: 1px solid #ddd; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; }
+    .footer { margin-top: 2rem; color: #666; font-size: 0.9rem; }
+  </style>
+  <!-- Load the web component (from unpkg CDN). You can pin a version, e.g., @11.x -->
+  https://unpkg.com/esp-web-tools@latest/dist/web/install-button.js</script>
+</head>
+<body>
+  <div class="container">
+    <h1>ESP Web Installer</h1>
+    <p class="desc">Flash your ESP32/ESP8266 firmware directly from the browser over Web Serial.</p>
+
+    <div class="card">
+      <h2>Install Firmware</h2>
+      <!-- The manifest path is relative to this page -->
+      <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+      <p style="margin-top:0.75rem;">
+        Tip: Use Chrome, Edge, or any browser supporting Web Serial. Connect your device, hold BOOT if required, and click Install.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Release Notes (v1.0.1)</h3>
+      <ul>
+        <li>ESP32: Full flash (bootloader + partitions + app)</li>
+        <li>ESP8266: Single app flash</li>
+        <li>Improved Wi-Fi onboarding flow in app firmware</li>
+      </ul>
+    </div>
+
+    <p class="footer">© 2025 Mortuza Mohammad</p>
+  </div>
+</</body>
