@@ -9,7 +9,7 @@
           { "path": "LED_Matrix_328_esp32.ino.bin", "offset": 65536 },
           { "path": "LED_Matrix_328_esp32.ino.bootloader.bin", "offset": 4096 },
           { "path": "LED_Matrix_328_esp32.ino.partitions.bin", "offset": 32768 }
-           { "path": "filesystem.littlefs.bin", "offset": 3997696 }
+          { "path": "filesystem.littlefs.bin", "offset": 3997696 }
         ]
       },
       {
