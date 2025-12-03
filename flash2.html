@@ -1,70 +1,8 @@
-
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>ESP Web Tool Demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      margin: 2rem;
-      background: #f9f9f9;
-    }
-    .container {
-      max-width: 700px;
-      margin: 0 auto;
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    h1 {
-      margin-bottom: 0.5rem;
-    }
-    .desc {
-      color: #555;
-      margin-bottom: 1.5rem;
-    }
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-    }
-    .footer {
-      margin-top: 2rem;
-      color: #666;
-      font-size: 0.9rem;
-      text-align: center;
-    }
-  </style>
-  <!-- Load ESP Web Tools component -->
-  <script type="module" src="httpslatest/dist/web/install-button.js</script>
-</head>
+<!DOCTYPE html>
+<html>
 <body>
-  <div class="container">
-    <h1>ESP Web Tool Demo</h1>
-    <p class="desc">Flash ESP32 and ESP8266 firmware directly from your browser using Web Serial.</p>
-
-    <div class="card">
-      <h2>Install Firmware</h2>
-      <!-- Manifest points to your JSON file -->
-      <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
-      <p style="margin-top:0.75rem;">
-        Use Chrome or Edge (Web Serial supported). Connect your device via USB and click Install.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Supported Boards</h3>
-      <ul>
-        <li>ESP32 (with bootloader, partitions, OTA, app, LittleFS)</li>
-        <li>ESP8266 (single firmware)</li>
-      </ul>
-    </div>
-
-    <p class="footer">© 2025 Your Name</p>
-   </div>
+    <h1>ESP-Web-Tool-Test</h1>
+    <script type="module" src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"></script>
+    <esp-web-install-button manifest="test/manifest.json"></esp-web-install-button>
 </body>
-      </html>
+</html>
