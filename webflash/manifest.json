@@ -12,11 +12,6 @@
            { "path": "M9_64.littlefs.bin", "offset": 2162688 } 
         ]
       },
-      {
-        "chipFamily": "ESP8266",
-        "parts": [
-          { "path": "esp8266/SerialHelloWorld.ino.bin", "offset": 0 }
-        ]
-      }
+      
     ]
   }
