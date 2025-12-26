@@ -9,6 +9,7 @@
           { "path": "M9_64.ino.bin", "offset": 65536 },
           { "path": "M9_64.ino.bootloader.bin", "offset": 4096 },
           { "path": "M9_64.ino.partitions.bin", "offset": 32768 }
+           { "path": "M9_64.littlefs.bin", "offset": 2162688 } 
         ]
       },
       {
