@@ -1,1 +1,21 @@
-
+{
+    "name": "InfoMatrix Flasher",
+    "new_install_prompt_erase": true,
+    "builds": [
+      {
+        "chipFamily": "ESP32",
+        "parts": [
+          { "path": "boot_app0.bin", "offset": 57344 },
+          { "path": "M9_64.ino.bin", "offset": 65536 },
+          { "path": "M9_64.ino.bootloader.bin", "offset": 4096 },
+          { "path": "M9_64.ino.partitions.bin", "offset": 32768 }
+        ]
+      },
+      {
+        "chipFamily": "ESP8266",
+        "parts": [
+          { "path": "esp8266/SerialHelloWorld.ino.bin", "offset": 0 }
+        ]
+      }
+    ]
+  }
