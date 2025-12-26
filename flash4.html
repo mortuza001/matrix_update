@@ -1,0 +1,39 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>InfoMatrix Flasher</title>
+  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+  <style>
+    body { font-family: system-ui, Segoe UI, Roboto, Arial; margin: 2rem; }
+    select { padding: .4rem; margin-left: .5rem; }
+  </style>
+</head>
+<body>
+  <h1>Flash InfoMatrix Firmware</h1>
+
+  <label>
+    Version:
+    <select id="version">
+      <option value="https://mortuza001.github.io/matrix_update/latest/manifest.json">Latest</option>
+      <option value="https://mortuza001.github.io/matrix_update/releases/1.1.0/manifest.json">1.1.0</option>
+      <option value="https://mortuza001.github.io/matrix_update/releases/1.0.0/manifest.json">1.0.0</option>
+    </select>
+  </label>
+
+  <p style="margin-top: 1rem;">
+    <esp-web-install-button id="btn"
+      manifest="https://mortuza001.github.io/matrix_update/latest/manifest.json">
+    </esp-web-install-button>
+  </p>
+
+  <script>
+    const sel = document.getElementById('version');
+    const btn = document.getElementById('btn');
+    sel.addEventListener('change', () => {
+      btn.setAttribute('manifest', sel.value);
+    });
+  </script>
+</body>
+</html>
