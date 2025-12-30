@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ESP32 Web Flasher</title>
+  <!-- Load the ESP Web Tools library -->
+  <script type="module" src="unpkg.com"></script>
+</head>
+<body>
+  <h1>Flash My ESP32 Firmware</h1>
+  <!-- The manifest path must match your file name -->
+  <esp-web-install-button manifest="./manifest.json">
+    <button slot="activate">Connect & Install</button>
+  </esp-web-install-button>
+</body>
+</html>
