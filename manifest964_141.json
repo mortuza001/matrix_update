@@ -1,0 +1,17 @@
+
+{
+  "name": "Infomatrix Firmware M9-64",
+  "version": "1.4.1",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "M9-64-version-1.4.1/webflash/boot_app0.bin", "offset": 57344 },
+        { "path": "M9-64-version-1.4.1/webflash/M9_64.ino.bootloader.bin", "offset": 4096 },
+        { "path": "M9-64-version-1.4.1/webflash/M9_64.ino.partitions.bin", "offset": 32768 },
+        { "path": "M9-64-version-1.4.1/webflash/M9_64.ino.bin", "offset": 65536 },
+        { "path": "M9-64-version-1.4.1/webflash/M9_64.littlefs.bin", "offset": 2162688 }
+      ]
+    }
+  ]
+}
