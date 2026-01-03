@@ -56,6 +56,8 @@
             color: #2c3e50;
         }
     </style>
+
+    <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
 </head>
 <body>
 
@@ -82,23 +84,51 @@
         <li>Connect the device to your PC using the USB cable.</li>
     </ol>
 
-    <h2>Step 2: Access the Flashing Tool</h2>
+    <h2>Step 2: Prepare to Flash - Firmware upgade</h2>
     <ol>
         <li>Open a web browser on your PC (Google Chrome or Edge).</li>
-        <li>Navigate to the following link: <a href="/flash4.html" target="_blank">Infomatrix Web Flasher</a></li>
+        <li>Select your Infomatrix device model and desired version from the dropdown menu.</li>
     </ol>
 
-    <h2>Step 3: Configure and Flash</h2>
+
+    <!-- 1. Dropdown for selecting versions -->
+    <select id="versionSelect" onchange="updateManifest()">
+       <option value="./manifest1264_113.json">M12-64 v1.1.3</option>
+      <option value="./manifest964_113.json">M9-64 v1.1.3</option>
+         <option value="./manifest1264_141.json">M12-64 v1.4.1</option>
+      <option value="./manifest964_141.json">M9-64 v1.4.1</option>
+        <option value="./manifest1264_152.json">M12-64 v1.5.2</option>
+    </select>
+
+    <br><br>
+
+    <!-- 2. The Flash Button (Initial manifest is the stable one) -->
+    <esp-web-install-button id="flashButton" manifest="manifest1264_113.json">
+        <button slot="activate">Flash Selected Version</button>
+    </esp-web-install-button>
+
+    <script>
+        // 3. JavaScript to update the manifest attribute dynamically
+        function updateManifest() {
+            const select = document.getElementById('versionSelect');
+            const button = document.getElementById('flashButton');
+            
+            // Set the new manifest path
+            button.setAttribute('manifest', select.value);
+            
+            console.log("Manifest updated to: " + select.value);
+        }
+    </script>
+    
     <ol>
-        <li><strong>Select Device Model:</strong> Choose your specific Infomatrix model from the dropdown menu.</li>
-        <li><strong>Select Version:</strong> Choose the desired firmware version you wish to install.</li>
+
         <li>Click the <strong>"Flash"</strong> button.</li>
         <li>A system pop-up window will appear asking you to select a connection port.</li>
         <li>Identify the correct <strong>COM Port</strong> associated with your connected device.</li>
         <li>Select the port and click <strong>"Connect"</strong> and <strong>"Install"</strong> to begin the process.</li>
     </ol>
 
-    <h2>Step 4: Completion</h2>
+    <h2>Step 3: Completion</h2>
     <ol>
         <li>Wait for the installation process to complete. This typically takes <strong>1–2 minutes</strong>.</li>
         <li>Once finished, your device will automatically reboot.</li>
