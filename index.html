@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,10 +27,12 @@
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
-        h2 {
+                   font-size: 1.25rem;
+        }
+        h3 {
             color: #34495e;
-            margin-top: 25px;
-            font-size: 1.25rem;
+            margin-top: 20px;
+            font-size: 1.1rem;
         }
         ul, ol {
             margin-bottom: 20px;
@@ -55,64 +58,76 @@
         strong {
             color: #2c3e50;
         }
+        img {
+            display: block;
+            margin: 15px 0;
+            max-width: 100%;
+            border-radius: 4px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #eaeaea;
+            margin: 30px 0;
+        }
     </style>
-
-
 </head>
 <body>
+    <div class="container">
+        <h1>Infomatrix Firmware Update Guide</h1>
 
-<div class="container">
-    <h1>Infomatrix Firmware Update Guide</h1>
+        <h2>Option 1: OTA Update</h2>
+        <p>For Firmware Version 1.9+ onwards, update directly over Wi-Fi:</p>
+        <ol>
+            <li>Download the latest firmware from the official source.</li>
+            <li>Visit the device URL: <code>http://IP-address/update</code>. The IP address is shown during the initial boot of the device. Example: <code>192.168.0.10/update</code>.</li>
+            <li>Follow on-screen instructions to complete the update.</li>
+        </ol>
 
-    <p>Please follow these steps to update your device firmware.</p>
 
-    <h3>Prerequisites:</h3>
-    <ul>
-        <li>A PC or Laptop with a USB port.</li>
-        <li>A standard USB data cable. Usually MicroUSB.</li>
-        <li>Appropriate screwdriver.</li>
-    </ul>
 
-    <hr style="border: 0; border-top: 1px solid #eaeaea; margin: 30px 0;">
+        <hr>
 
-    <h2>Step 1: Access the Hardware</h2>
-    <ol>
-        <li>Locate the side of the device cover that displays the <strong>"Infomatrix"</strong> label.</li>
-        <li>Using a screwdriver, carefully remove the screws securing that side of cover.</li>
-        <li>Remove the cover to expose the internal components.</li>
-        <li>Locate the microcontroller's USB port inside the device.</li>
-        <img src="infomatrix-usb.JPEG" alt="USB Flash">
-        <li>Connect the device to your PC using USB cable.</li>
-        
-    </ol>
+        <h2>Option 2: Manual Flash</h2>
 
-    <h2>Step 2: Prepare to Flash - Firmware upgade</h2>
-    <ol>
-        <li>Open a web browser on your PC (Google Chrome or Edge).</li>
-        <li>Navigate to the following link: <a href="/flash4.html" target="_blank">Infomatrix Web Flash</a></li>
-        <li>Select your Infomatrix device model and desired version from the dropdown menu.</li>
-        
+                <h3>Prerequisites:</h3>
+        <ul>
+            <li>A PC or Laptop with a USB port.</li>
+            <li>A standard USB data cable (usually MicroUSB).</li>
+            <li>An appropriate screwdriver.</li>
+        </ul>
 
-        <li>Click the <strong>"Flash"</strong> button.</li>
-        <li>A system pop-up window will appear asking you to select a connection port.</li>
-        <li>Identify the correct <strong>COM Port</strong> associated with your connected device.</li>
-        <li>Select the port and click <strong>"Connect"</strong> and <strong>"Install"</strong> to begin the process.</li>
-    </ol>
+        <h2>Step 1: Access the Hardware</h2>
+        <ol>
+            <li>Locate the side of the device cover that displays the <strong>"Infomatrix"</strong> label.</li>
+            <li>Using a screwdriver, carefully remove the screws securing that side of the cover.</li>
+            <li>Remove the cover to expose the internal components.</li>
+            <li>Locate the microcontroller's USB port inside the device.</li>
+            <li><img src="infomatrix-usb.JPEG" alt="USB Flash"></li>
+            <li>Connect the device to your PC using the USB cable.</li>
+        </ol>
 
-    <h2>Step 3: Completion</h2>
-    <ol>
-        <li>Wait for the installation process to complete. This typically takes <strong>1–2 minutes</strong>.</li>
-        <li>Once finished, your device will automatically reboot.</li>
-        <li>Unplug the USB cable and reinstall the cover, ensuring the screws are not overtightened.</li>
-    </ol>
+        <h2>Step 2: Prepare to Flash - Firmware Upgrade</h2>
+        <ol>
+            <li>Open a web browser on your PC (Google Chrome or Edge).</li>
+            <li>Navigate to: <a href="/flash4.html" target="_blank">Infomatrix Web Flash</a>.</li>
+            <li>Select your Infomatrix device model and desired version from the dropdown menu.</li>
+            <li>Click the <strong>"Flash"</strong> button.</li>
+            <li>A system pop-up window will appear asking you to select a connection port.</li>
+            <li>Identify the correct <strong>COM Port</strong> associated with your connected device.</li>
+            <li>Select the port and click <strong>"Connect"</strong> and <strong>"Install"</strong> to begin the process.</li>
+        </ol>
 
-    <div class="warning-box">
-        <strong>Important:</strong> After the reboot, your previous settings may be reset. You will need to reconfigure your device settings (WiFi, preferences, license etc.) before use.<br>
-        Visit - <a href= "https://matrix-license.onrender.com"> matrix-license.onrender.com </a>- for license key generation.
+        <h2>Step 3: Completion</h2>
+        <ol>
+            <li>Wait for the installation process to complete. This typically takes <strong>1–2 minutes</strong>.</li>
+            <li>Once finished, your device will automatically reboot.</li>
+            <li>Unplug the USB cable and reinstall the cover, ensuring the screws are not overtightened.</li>
+        </ol>
+
+        <div class="warning-box">
+            <strong>Important:</strong> After the reboot, your previous settings may be reset. You will need to reconfigure your device settings (Wi-Fi, preferences, license, etc.) before use.<br>
+            Visit: <a href="https://matrix-license.onrender.com" target="_blank">matrix-license.onrender.com</a> for license key generation.
+        </div>
     </div>
-    
- 
-</div>
-
 </body>
 </html>
