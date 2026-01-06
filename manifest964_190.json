@@ -5,8 +5,14 @@
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "M9-64-version-1.9.0/webflash/M9_64.full.ino.bin", "offset": 1048576 },
-        { "path": "M9-64-version-1.9.0/webflash/M9_64.littlefs.bin", "offset": 3473408 }
+
+        { "path": "M9-64-version-1.9.0/webflash/boot_app0.bin", "offset": 57344 },
+    { "path": "M9-64-version-1.9.0/webflash/M9_64.ino.bootloader.bin", "offset": 4096 },
+    { "path": "M9-64-version-1.9.0/webflash/M9_64.ino.partitions.bin", "offset": 32768 },
+    { "path": "M9-64-version-1.9.0/webflash/M9_64.ino.bin",   "offset": 65536 },
+    { "path": "M9-64-version-1.9.0/webflash/M9_64.littlefs.bin",     "offset": 3473408 }
+
+ 
       ]
     }
   ]
