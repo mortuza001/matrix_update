@@ -1,0 +1,13 @@
+{
+  "name": "Infomatrix Firmware M9-64",
+  "version": "1.9.0",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "M9-64-version-1.9.0/webflash/M9_64.full.ino.bin", "offset": 65536 },
+        { "path": "M9-64-version-1.9.0/webflash/M9_64.littlefs.bin", "offset": 2162688 }
+      ]
+    }
+  ]
+}
