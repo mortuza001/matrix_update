@@ -3,16 +3,19 @@
   "name": "Infomatrix Firmware M9-64",
   "version": "1.9.0",
   "builds": [
-    {
-      "chipFamily": "ESP32",
-      "parts": [
-        { "path": "M9-64-version-1.9.0/webflash/M9_64.ino.bootloader.bin", "offset": "0x1000" },
-        { "path": "M9-64-version-1.9.0/webflash/M9_64.ino.partitions.bin", "offset": "0x8000" },
-        { "path": "M9-64-version-1.9.0/webflash/boot_app0.bin",            "offset": "0xE000" },
-        { "path": "M9-64-version-1.9.0/webflash/M9_64.ino.bin",            "offset": "0x10000" },
-        { "path": "M9-64-version-1.9.0/webflash/spiffs.bin",               "offset": "0x350000" }
-      ]
-    }
+{
+  "chipFamily": "ESP32",
+  "parts": [
+    { "path": "M9-64-version-1.9.0/webflash/M9_64.ino.bootloader.bin", "offset": "0x1000"  },
+    { "path": "M9-64-version-1.9.0/webflash/M9_64.ino.partitions.bin", "offset": "0x8000"  },
+    { "path": "M9-64-version-1.9.0/webflash/boot_app0.bin",            "offset": "0xE000"  },
+    { "path": "M9-64-version-1.9.0/webflash/M9_64.ino.bin",            "offset": "0x10000" },
+    { "path": "M9-64-version-1.9.0/webflash/spiffs.bin",               "offset": "0x350000"}
   ]
 }
-``
+
+  ]
+}
+
+
+
