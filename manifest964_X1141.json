@@ -1,20 +1,16 @@
-
 {
   "name": "Infomatrix Firmware X9-64",
   "version": "1.14.1",
   "builds": [
-{
-  "chipFamily": "ESP32-S3",
-  "parts": [
-    { "path": "X9-64-version-1.14.1/webflash/X9_64.ino.bootloader.bin", "offset": "0x1000"  },
-    { "path": "X9-64-version-1.14.1/webflash/X9_64.ino.partitions.bin", "offset": "0x8000"  },
-    { "path": "X9-64-version-1.14.1/webflash/boot_app0.bin",            "offset": "0xE000"  },
-    { "path": "X9-64-version-1.14.1/webflash/X9_64.ino.bin",            "offset": "0x10000" },
-    { "path": "X9-64-version-1.14.1/webflash/littlefs.filesystem.1141.bin",               "offset": "0x610000"}
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "X9-64-version-1.14.1/webflash/X9_64.ino.bootloader.bin",   "offset": 4096  },
+        { "path": "X9-64-version-1.14.1/webflash/X9_64.ino.partitions.bin",  "offset": 32768 },
+        { "path": "X9-64-version-1.14.1/webflash/boot_app0.bin",             "offset": 57344 },
+        { "path": "X9-64-version-1.14.1/webflash/X9_64.ino.bin",             "offset": 65536 },
+        { "path": "X9-64-version-1.14.1/webflash/littlefs.filesystem.1141.bin", "offset": 6356992 }
+      ]
+    }
   ]
 }
-
-  ]
-}
-
-
