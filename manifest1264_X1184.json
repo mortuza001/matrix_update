@@ -5,11 +5,11 @@
     {
       "chipFamily": "ESP32-S3",
       "parts": [
-        { "path": "X12-64-version-1.18.4/webflash/X12_128.ino.bootloader.bin",   "offset": 0 },
-        { "path": "X12-64-version-1.18.4/webflash/X12_128.ino.partitions.bin",  "offset": 32768 },
-        { "path": "X12-64-version-1.18.4/webflash/boot_app0.bin",             "offset": 57344 },
-        { "path": "X12-64-version-1.18.4/webflash/X12_128.ino.bin",             "offset": 65536 },
-        { "path": "X12-64-version-1.18.4/webflash/littlefs.filesystem.1184.bin", "offset": 6356992 }
+        { "path": "X12-128-version-1.18.4/webflash/X12_128.ino.bootloader.bin",   "offset": 0 },
+        { "path": "X12-128-version-1.18.4/webflash/X12_128.ino.partitions.bin",  "offset": 32768 },
+        { "path": "X12-128-version-1.18.4/webflash/boot_app0.bin",             "offset": 57344 },
+        { "path": "X12-128-version-1.18.4/webflash/X12_128.ino.bin",             "offset": 65536 },
+        { "path": "X12-128-version-1.18.4/webflash/littlefs.filesystem.1184.bin", "offset": 6356992 }
       ]
     }
   ]
